@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- ================================================================ -->
+    <!-- parent -->
+    <!-- ================================================================ -->
+    <parent>
+        <groupId>org.yage.self.examination</groupId>
+        <artifactId>self-examination</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <!-- ================================================================ -->
+    <!-- basic maven info -->
+    <!-- ================================================================ -->
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>self-examination-main</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>self-examination-main</name>
+    <description>Demo project for Spring Boot</description>
+
+    <!-- ================================================================ -->
+    <!-- properties -->
+    <!-- ================================================================ -->
+    <properties>
+        <java.version>1.8</java.version>
+        <self-examination-common.version>0.0.1-SNAPSHOT</self-examination-common.version>
+        <logstash-logback-encoder.version>5.0</logstash-logback-encoder.version>
+    </properties>
+
+    <!-- ================================================================ -->
+    <!-- dependencies -->
+    <!-- ================================================================ -->
+    <dependencies>
+
+        <!-- ******************************** -->
+        <!-- self-examination-common -->
+        <!-- ******************************** -->
+        <dependency>
+            <groupId>org.yage.self.examination</groupId>
+            <artifactId>self-examination-common</artifactId>
+            <version>${self-examination-common.version}</version>
+        </dependency>
+
+        <!-- ******************************** -->
+        <!-- lombok -->
+        <!-- ******************************** -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- ******************************** -->
+        <!-- spring boot starter -->
+        <!-- ******************************** -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- ******************************** -->
+        <!-- logstash -->
+        <!-- ******************************** -->
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>${logstash-logback-encoder.version}</version>
+        </dependency>
+
+        <!-- ******************************** -->
+        <!-- test -->
+        <!-- ******************************** -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <!-- ================================================================ -->
+    <!-- build -->
+    <!-- ================================================================ -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

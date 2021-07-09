@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- ================================================================ -->
+    <!-- parent -->
+    <!-- ================================================================ -->
+    <parent>
+        <groupId>org.yage.self.examination</groupId>
+        <artifactId>self-examination</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <!-- ================================================================ -->
+    <!-- basic maven info -->
+    <!-- ================================================================ -->
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>self-examination-common</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>self-examination-common</name>
+    <description>Demo project for Spring Boot</description>
+
+    <!-- ================================================================ -->
+    <!-- properties -->
+    <!-- ================================================================ -->
+    <properties>
+        <java.version>1.8</java.version>
+        <fastjson.version>1.2.55</fastjson.version>
+        <commons-lang3.version>3.9</commons-lang3.version>
+        <httpclient.version>4.5.8</httpclient.version>
+        <elasticsearch.version>7.8.1</elasticsearch.version>
+        <commons-io.version>2.6</commons-io.version>
+    </properties>
+
+    <!-- ================================================================ -->
+    <!-- dependencies -->
+    <!-- ================================================================ -->
+    <dependencies>
+
+        <!-- ******************************** -->
+        <!-- json -->
+        <!-- ******************************** -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+        <!-- ******************************** -->
+        <!-- lombok -->
+        <!-- ******************************** -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- ******************************** -->
+        <!-- apache -->
+        <!-- ******************************** -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+
+        <!-- ******************************** -->
+        <!-- elasticsearch -->
+        <!-- ******************************** -->
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>${elasticsearch.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-high-level-client</artifactId>
+            <version>${elasticsearch.version}</version>
+        </dependency>
+
+        <!-- ******************************** -->
+        <!-- other -->
+        <!-- ******************************** -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
